@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Parents | Épilepsie à l'École</title>
+    <link rel="stylesheet" href="css/espace-parents.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-home"></i>
+                <span>Espace<span class="logo-highlight">Parents</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#accueil" class="nav-link active"><i class="fas fa-home"></i> Accueil</a>
+                <a href="#comprendre" class="nav-link"><i class="fas fa-brain"></i> Comprendre</a>
+                <a href="#accompagner" class="nav-link"><i class="fas fa-hands-helping"></i> Accompagner</a>
+                <a href="#ressources" class="nav-link"><i class="fas fa-folder-open"></i> Ressources</a>
+                <a href="#quiz" class="nav-link"><i class="fas fa-question-circle"></i> Quiz</a>
+                <a href="index.html" class="nav-btn"><i class="fas fa-arrow-left"></i> Retour</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-parents" id="accueil">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate__animated animate__fadeInDown">
+                        <span class="hero-title">Accompagner</span>
+                        <span class="hero-subtitle">votre enfant à l'école</span>
+                    </h1>
+                    <p class="hero-description">
+                        Un guide complet pour les parents d'enfants épileptiques :
+                        <span class="highlight">comprendre, rassurer et collaborer</span> avec l'école
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <i class="fas fa-user-graduate"></i>
+                            <div>
+                                <span class="number">80%</span>
+                                <span class="label">Scolarité normale</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-school"></i>
+                            <div>
+                                <span class="number">95%</span>
+                                <span class="label">Écoles concernées</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <span class="number">100%</span>
+                                <span class="label">Enfants épanouis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="family-illustration">
+                        <div class="parent parent-1">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="parent parent-2">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="child">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="school">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="connection"></div>
+                        <div class="connection"></div>
+                        <div class="connection"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Section Comprendre l'épilepsie -->
+    <section class="section comprendre" id="comprendre">
+        <div class="section-header">
+            <h2><i class="fas fa-brain"></i> Comprendre l'épilepsie</h2>
+            <p class="section-subtitle">Les bases scientifiques expliquées simplement</p>
+        </div>
+
+        <div class="comprendre-grid">
+            <!-- Vidéo Éducative -->
+            <div class="video-card">
+                <div class="video-header">
+                    <h3><i class="fas fa-video"></i> Vidéo explicative</h3>
+                    <span class="video-duration">1:24 min</span>
+                </div>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Cerveau et épilepsie">
+                    </div>
+                    <div class="video-info">
+                        <h4>L'épilepsie chez l'enfant</h4>
+                        <p>Explications simples du fonctionnement du cerveau et des crises</p>
+                        <button class="play-btn" data-video="assets/videos/Vidéo explicative.mp4">
+                            <i class="fas fa-play"></i> Regarder la vidéo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Types de crises -->
+            <div class="crises-card">
+                <h3><i class="fas fa-exclamation-triangle"></i> Types de crises</h3>
+                <div class="crises-grid">
+                    <div class="crise-type">
+                        <div class="crise-icon crise-focale">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Crises focales</h4>
+                        <p>Touchant une zone précise du cerveau</p>
+                        <button class="info-btn" data-target="focale">+ Info</button>
+                    </div>
+                    <div class="crise-type">
+                        <div class="crise-icon crise-generalisee">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                        <h4>Crises généralisées</h4>
+                        <p>Touchant tout le cerveau</p>
+                        <button class="info-btn" data-target="generalisee">+ Info</button>
+                    </div>
+                    <div class="crise-type">
+                        <div class="crise-icon crise-absence">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Absences</h4>
+                        <p>Perte de conscience brève</p>
+                        <button class="info-btn" data-target="absence">+ Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infographie Interactive -->
+            <div class="infographie-card">
+                <h3><i class="fas fa-chart-pie"></i> Répartition des types</h3>
+                <div class="pie-chart">
+                    <div class="chart-container">
+                        <canvas id="crisesChart"></canvas>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="color-dot" style="background: #4CAF50;"></span>
+                            <span>Focales (60%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="color-dot" style="background: #2196F3;"></span>
+                            <span>Généralisées (30%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="color-dot" style="background: #FF9800;"></span>
+                            <span>Absences (10%)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel des symptômes -->
+        <div class="symptoms-carousel">
+            <h3><i class="fas fa-clipboard-list"></i> Signes à reconnaître</h3>
+            <div class="swiper symptoms-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide symptom-card">
+                        <div class="symptom-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Regard fixe</h4>
+                        <p>L'enfant semble "absent", ne répond pas</p>
+                    </div>
+                    <div class="swiper-slide symptom-card">
+                        <div class="symptom-icon">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                        <h4>Tremblements</h4>
+                        <p>Mouvements involontaires des membres</p>
+                    </div>
+                    <div class="swiper-slide symptom-card">
+                        <div class="symptom-icon">
+                            <i class="fas fa-dizzy"></i>
+                        </div>
+                        <h4>Perte de conscience</h4>
+                        <p>Chute brutale sans raison apparente</p>
+                    </div>
+                    <div class="swiper-slide symptom-card">
+                        <div class="symptom-icon">
+                            <i class="fas fa-comment-slash"></i>
+                        </div>
+                        <h4>Confusion</h4>
+                        <p>Désorientation après la crise</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Accompagner -->
+    <section class="section accompagner" id="accompagner">
+        <div class="section-header">
+            <h2><i class="fas fa-hands-helping"></i> Accompagner votre enfant</h2>
+            <p class="section-subtitle">Conseils pratiques pour le quotidien</p>
+        </div>
+
+        <div class="accompagner-grid">
+            <!-- Étapes Timeline -->
+            <div class="timeline-card">
+                <h3><i class="fas fa-road"></i> Parcours du diagnostic</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-number">1</div>
+                        <div class="timeline-content">
+                            <h4>Premiers signes</h4>
+                            <p>Observer et noter les symptômes</p>
+                            <ul>
+                                <li>Date et heure des crises</li>
+                                <li>Durée et description</li>
+                                <li>Éléments déclencheurs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content">
+                            <h4>Consultation médicale</h4>
+                            <p>Rencontrer un neurologue pédiatrique</p>
+                            <ul>
+                                <li>EEG (électroencéphalogramme)</li>
+                                <li>IRM cérébrale</li>
+                                <li>Bilan complet</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">3</div>
+                        <div class="timeline-content">
+                            <h4>Traitement adapté</h4>
+                            <p>Mise en place du traitement</p>
+                            <ul>
+                                <li>Médicaments antiépileptiques</li>
+                                <li>Régularité des prises</li>
+                                <li>Surveillance des effets</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">4</div>
+                        <div class="timeline-content">
+                            <h4>Suivi scolaire</h4>
+                            <p>Collaboration avec l'école</p>
+                            <ul>
+                                <li>Projet d'Accueil Individualisé (PAI)</li>
+                                <li>Information des enseignants</li>
+                                <li>Adaptations pédagogiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fiches pratiques -->
+            <div class="fiches-card">
+                <h3><i class="fas fa-file-medical"></i> Fiches pratiques</h3>
+                <div class="fiches-grid">
+                    <div class="fiche">
+                        <div class="fiche-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="fiche-content">
+                            <h4>Mon enfant à l’école</h4>
+                            <p>Une scolarité sécurisée et épanouissante</p>
+                            <button type="button" class="download-btn" data-pdf="parents/Mon enfant à l'école.pdf">
+                                <i class="fas fa-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fiche">
+                        <div class="fiche-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="fiche-content">
+                            <h4>L'épilepsie</h4>
+                            <p>Comprendre l'épilepsie de mon enfant</p>
+                            <button type="button" class="download-btn" data-pdf="parents/Comprendre l'épilepsie de mon enfant.pdf">
+                                <i class="fas fa-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fiche">
+                        <div class="fiche-icon">
+                            <i class="fas fa-house-medical"></i>
+                        </div>
+                        <div class="fiche-content">
+                            <h4>Urgences et sécurité à la maison</h4>
+                            <p>Gérer les crises à la maison</p>
+                            <button type="button" class="download-btn" data-pdf="parents/Urgences et sécurité à la maison.pdf">
+                                <i class="fas fa-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fiche">
+                        <div class="fiche-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <div class="fiche-content">
+                            <h4>Vie quotidienne et bien-être</h4>
+                            <p>Bien-être et épanouissement</p>
+                            <button type="button" class="download-btn" data-pdf="parents/Vie quotidienne et bien-être.pdf">
+                                <i class="fas fa-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gestes d'urgence interactive -->
+        <div class="urgence-card">
+            <h3><i class="fas fa-first-aid"></i> Gestes d'urgence</h3>
+            <div class="urgence-steps">
+                <div class="step active" data-step="1">
+                    <div class="step-visual">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Protéger</h4>
+                        <p>Éloigner les objets dangereux, protéger la tête</p>
+                    </div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-visual">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Ne pas contraindre</h4>
+                        <p>Ne pas tenir l'enfant, ne rien mettre dans la bouche</p>
+                    </div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-visual">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Chronométrer</h4>
+                        <p>Noter la durée de la crise (généralement 1-2 min)</p>
+                    </div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-visual">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Appeler si nécessaire</h4>
+                        <p>190 (SAMU) si crise >5min ou première crise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="urgence-controls">
+                <button class="prev-step"><i class="fas fa-chevron-left"></i> Précédent</button>
+                <button class="next-step">Suivant <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Ressources -->
+    <section class="section ressources" id="ressources">
+        <div class="section-header">
+            <h2><i class="fas fa-folder-open"></i> Ressources complémentaires</h2>
+            <p class="section-subtitle">Vidéos, associations et documents utiles</p>
+        </div>
+
+        <div class="ressources-grid">
+            <!-- Vidéos éducatives -->
+            <div class="videos-card">
+                <h3><i class="fas fa-film"></i> Vidéothèque</h3>
+                <div class="videos-grid">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/example1/mqdefault.jpg" alt="Vidéo 1">
+                            <div class="play-overlay" data-video="assets/videos/types de crises.mp4">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-details">
+                            <h4>Les types de crises</h4>
+                            <p>Comment gérer le diagnostic au quotidien</p>
+                            <span class="video-duration">1:21 minutes</span>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/example2/mqdefault.jpg" alt="Vidéo 2">
+                            <div class="play-overlay" data-video="assets/videos/L'épilepsie à l'école.mp4">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-details">
+                            <h4>L'épilepsie à l'école</h4>
+                            <p>Reportage dans une classe inclusive</p>
+                            <span class="video-duration">0:58 minutes </span>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/example3/mqdefault.jpg" alt="Vidéo 3">
+                            <div class="play-overlay" data-video="assets/videos/Les traitements expliqués.mp4">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-details">
+                            <h4>Les traitements expliqués</h4>
+                            <p>Explications par un neurologue pédiatrique</p>
+                            <span class="video-duration">1:05 minutes </span>
+                        </div>
+                    </div>
+                </div>
+                <button class="more-videos">
+                    <i class="fas fa-plus-circle"></i> Plus de vidéos
+                </button>
+            </div>
+
+            <!-- Associations -->
+            <div class="associations-card">
+                <h3><i class="fas fa-hands-helping"></i> Associations</h3>
+                <div class="associations-list">
+                    <a href="#" class="association">
+                        <div class="association-logo">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="association-info">
+                            <h4>Épilepsie France</h4>
+                            <p>Association nationale d'aide aux patients</p>
+                            <span class="association-link">www.epilepsie-france.fr</span>
+                        </div>
+                    </a>
+                    <a href="#" class="association">
+                        <div class="association-logo">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="association-info">
+                            <h4>AFE (Enfants)</h4>
+                            <p>Spécialisée dans l'épilepsie pédiatrique</p>
+                            <span class="association-link">www.afe-enfants.fr</span>
+                        </div>
+                    </a>
+                    <a href="#" class="association">
+                        <div class="association-logo">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="association-info">
+                            <h4>Groupe de parole</h4>
+                            <p>Rencontres entre parents d'enfants épileptiques</p>
+                            <span class="association-link">www.parents-epilepsie.fr</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- FAQ Interactive -->
+            <div class="faq-card">
+                <h3><i class="fas fa-question-circle"></i> Questions fréquentes</h3>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Mon enfant peut-il faire du sport ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, dans la plupart des cas ! La majorité des sports sont autorisés sous surveillance.
+                                Évitez les sports à risque de chute importante (escalade, équitation) sans avis médical.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Comment en parler aux frères et sœurs ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Utilisez des mots simples, adaptés à leur âge. Expliquez que c'est comme un "orage dans
+                                le cerveau" qui passe vite. Rassurez-les sur le fait que ce n'est pas contagieux.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Faut-il informer l'école ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolument. Une bonne communication avec l'école permet de mettre en place un PAI (Projet
+                                d'Accueil Individualisé) pour adapter la scolarité de votre enfant.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Les médicaments ont-ils des effets secondaires ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Comme tout médicament, des effets secondaires sont possibles (fatigue, troubles de la
+                                concentration). Votre médecin adaptera le traitement pour les minimiser.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Quiz -->
+    <section class="section quiz-section" id="quiz">
+        <div class="section-header">
+            <h2><i class="fas fa-brain"></i> Quiz Parents</h2>
+            <p class="section-subtitle">Testez vos connaissances sur l'épilepsie</p>
+        </div>
+
+        <div class="quiz-container">
+            <div class="quiz-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="quizProgress"></div>
+                </div>
+                <span id="currentQuestion">1</span>/<span id="totalQuestions">5</span>
+            </div>
+
+            <div class="quiz-content">
+                <div class="quiz-question active" id="question1">
+                    <h3>Question 1</h3>
+                    <p>L'épilepsie est-elle une maladie contagieuse ?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Oui, comme la grippe</span>
+                        </button>
+                        <button class="quiz-option" data-correct="true">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Non, c'est neurologique</span>
+                        </button>
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">Seulement par contact direct</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="quiz-question" id="question2">
+                    <h3>Question 2</h3>
+                    <p>Que faut-il faire pendant une crise convulsive ?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Mettre un objet dans la bouche</span>
+                        </button>
+                        <button class="quiz-option" data-correct="true">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Protéger la tête et attendre</span>
+                        </button>
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">Donner à boire immédiatement</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="quiz-question" id="question3">
+                    <h3>Question 3</h3>
+                    <p>Qu'est-ce qu'un PAI à l'école ?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Un programme d'activités</span>
+                        </button>
+                        <button class="quiz-option" data-correct="true">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Projet d'Accueil Individualisé</span>
+                        </button>
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">Un plan d'aide aux études</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="quiz-question" id="question4">
+                    <h3>Question 4</h3>
+                    <p>Quel pourcentage d'enfants épileptiques mène une scolarité normale ?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">30%</span>
+                        </button>
+                        <button class="quiz-option" data-correct="true">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">80%</span>
+                        </button>
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">50%</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="quiz-question" id="question5">
+                    <h3>Question 5</h3>
+                    <p>Quand faut-il appeler le 190 pendant une crise ?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Toujours</span>
+                        </button>
+                        <button class="quiz-option" data-correct="true">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Si la crise dure plus de 5 minutes</span>
+                        </button>
+                        <button class="quiz-option" data-correct="false">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">Seulement la nuit</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="quiz-results" id="quizResults">
+                    <div class="results-content">
+                        <h3>Résultats du quiz</h3>
+                        <div class="score-circle">
+                            <svg width="150" height="150" viewBox="0 0 36 36">
+                                <path d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee" stroke-width="3" />
+                                <path id="score-circle" d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#4CAF50" stroke-width="3"
+                                    stroke-dasharray="0, 100" />
+                            </svg>
+                            <div class="score-text">
+                                <span id="finalScore">0</span>%
+                            </div>
+                        </div>
+                        <p id="scoreMessage"></p>
+                        <div class="results-actions">
+                            <button class="retry-btn" id="retryQuiz">
+                                <i class="fas fa-redo"></i> Recommencer
+                            </button>
+                            <button class="share-btn" id="shareResults">
+                                <i class="fas fa-share-alt"></i> Partager
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button class="quiz-btn prev-btn" id="prevQuestion">
+                    <i class="fas fa-arrow-left"></i> Précédent
+                </button>
+                <button class="quiz-btn next-btn" id="nextQuestion">
+                    Suivant <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="quiz-btn submit-btn" id="submitQuiz">
+                    Terminer <i class="fas fa-check"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>Épilepsie<span class="logo-highlight">École</span></span>
+                </a>
+                <p class="footer-description">
+                    Ressources pour les parents d'enfants épileptiques en milieu scolaire
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Navigation</h4>
+                    <a href="#accueil">Accueil</a>
+                    <a href="#comprendre">Comprendre</a>
+                    <a href="#accompagner">Accompagner</a>
+                    <a href="#ressources">Ressources</a>
+                    <a href="#quiz">Quiz</a>
+                </div>
+
+                <div class="link-group">
+                    <h4>Ressources utiles</h4>
+                    <a href="#">Modèles de documents</a>
+                    <a href="#">Vidéos éducatives</a>
+                    <a href="#">Associations</a>
+                    <a href="#">FAQ complète</a>
+                    <a href="#">Contact médical</a>
+                </div>
+
+                <div class="link-group">
+                    <h4>Contact</h4>
+                    <a href="mailto:parents@epilepsie-ecole.fr">
+                        <i class="fas fa-envelope"></i> parents@epilepsie-ecole.fr
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-phone"></i> 01 23 45 67 89
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-map-marker-alt"></i> Support parents
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Recevez nos conseils et ressources</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Espace Parents – Projet de Fin d'Études © 2026 – Essra Slimeni & Eya Saadi</p>
+            <div class="footer-extra">
+                <a href="#">Mentions légales</a>
+                <a href="#">Confidentialité</a>
+                <a href="#">Accessibilité</a>
+                <a href="#">Crédits</a>
+            </div>
+        </div>
+
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Modal pour les vidéos -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="video-wrapper">
+                    <video id="videoPlayerLocal" controls playsinline width="560" height="315"
+                        style="display: none;"></video>
+                    <iframe id="videoPlayer" width="560" height="315" src="" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/pdf-download.js"></script>
+    <script src="js/espace-parents.js"></script>
+</body>
+
+</html>

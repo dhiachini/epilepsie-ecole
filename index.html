@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Épilepsie à l'École | Accueil</title>
+    <link rel="stylesheet" href="css/accueil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-brain"></i>
+                <span>Épilepsie<span class="logo-highlight">École</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Accueil</a>
+                <a href="#pourquoi" class="nav-link">Mission</a>
+                <a href="#espaces" class="nav-link">Espaces</a>
+                <a href="#stats" class="nav-link">Chiffres</a>
+                <a href="#message" class="nav-link">Message</a>
+                <a href="#contact" class="nav-btn">Contact</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate__animated animate__fadeInDown">
+                        <span class="hero-title">Comprendre</span>
+                        <span class="hero-subtitle">l'épilepsie à l'école</span>
+                    </h1>
+                    <p class="hero-description animate__animated animate__fadeInUp">
+                        Une plateforme pédagogique pour <span class="highlight">informer, rassurer et accompagner</span> 
+                        la communauté éducative dans son ensemble
+                    </p>
+                    <div class="hero-buttons animate__animated animate__fadeInUp">
+                        <a href="#espaces" class="btn-primary">
+                            <i class="fas fa-rocket"></i> Découvrir les espaces
+                        </a>
+                        <a href="#pourquoi" class="btn-secondary">
+                            <i class="fas fa-info-circle"></i> Notre mission
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="brain-animation">
+                        <div class="neuron" style="--delay: 0s"></div>
+                        <div class="neuron" style="--delay: 0.5s"></div>
+                        <div class="neuron" style="--delay: 1s"></div>
+                        <div class="neuron" style="--delay: 1.5s"></div>
+                        <div class="pulse-circle"></div>
+                        <div class="brain-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#pourquoi" class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Explorer</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Section Pourquoi -->
+    <section class="pourquoi" id="pourquoi">
+        <div class="section-header">
+            <h2 class="section-title">Pourquoi ce site ?</h2>
+            <p class="section-subtitle">Notre mission éducative et sociale</p>
+            <div class="section-divider"></div>
+        </div>
+        <div class="pourquoi-content">
+            <div class="pourquoi-text">
+                <h3>Un besoin essentiel d'information</h3>
+                <p>
+                    L'épilepsie touche <strong>1 enfant sur 200</strong> en France, pourtant elle reste méconnue et source de nombreuses idées reçues dans le milieu scolaire.
+                </p>
+                <p>
+                    Notre objectif est de <strong>briser les tabous</strong> et de fournir des ressources adaptées à chaque acteur de l'éducation pour créer un environnement scolaire bienveillant et inclusif.
+                </p>
+                <div class="objectifs-grid">
+                    <div class="objectif">
+                        <i class="fas fa-user-graduate"></i>
+                        <h4>Épanouissement scolaire</h4>
+                        <p>Permettre à chaque enfant de réussir sa scolarité</p>
+                    </div>
+                    <div class="objectif">
+                        <i class="fas fa-hands"></i>
+                        <h4>Collaboration</h4>
+                        <p>Favoriser le dialogue entre famille et école</p>
+                    </div>
+                    <div class="objectif">
+                        <i class="fas fa-heartbeat"></i>
+                        <h4>Bien-être</h4>
+                        <p>Assurer la sécurité et le confort de l'enfant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pourquoi-visual">
+                <div class="visual-card">
+                    <div class="visual-content">
+                        <div class="visual-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h4>École inclusive</h4>
+                        <p>Créer un environnement adapté à tous les élèves</p>
+                        <div class="visual-stats">
+                            <div class="stat">
+                                <span class="number">80%</span>
+                                <span class="label">Scolarité normale</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">95%</span>
+                                <span class="label">Enseignants concernés</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Espaces -->
+    <section class="espaces" id="espaces">
+        <div class="section-header">
+            <h2 class="section-title">Les Espaces du Site</h2>
+            <p class="section-subtitle">Des ressources adaptées à chaque public</p>
+            <div class="section-divider"></div>
+        </div>
+        <div class="espaces-container">
+
+            <!-- Carte Parents -->
+            <div class="espace-card parents-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-icon"><i class="fas fa-home"></i></div>
+                        <h3>Espace Parents</h3>
+                        <p>Guide complet pour accompagner votre enfant</p>
+                        <div class="card-hover"><span>Cliquez pour explorer</span> <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="card-back">
+                        <h4>Ce que vous trouverez :</h4>
+                        <ul>
+                            <li><i class="fas fa-stethoscope"></i> Informations médicales</li>
+                            <li><i class="fas fa-comments"></i> Conseils psychologiques</li>
+                            <li><i class="fas fa-gavel"></i> Droits et démarches</li>
+                            <li><i class="fas fa-handshake"></i> Collaboration école</li>
+                        </ul>
+                        <a href="espace-parents.html" class="card-action" data-target="parents">Accéder à l'espace</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte Enseignants -->
+            <div class="espace-card teachers-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3>Espace Enseignants</h3>
+                        <p>Outils pédagogiques et protocoles</p>
+                        <div class="card-hover"><span>Cliquez pour explorer</span> <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="card-back">
+                        <h4>Ce que vous trouverez :</h4>
+                        <ul>
+                            <li><i class="fas fa-file-alt"></i> Fiches pédagogiques</li>
+                            <li><i class="fas fa-first-aid"></i> Gestes d'urgence</li>
+                            <li><i class="fas fa-user-friends"></i> Inclusion en classe</li>
+                            <li><i class="fas fa-tools"></i> Adaptations pratiques</li>
+                        </ul>
+                        <a href="espace-enseignants.html" class="card-action" data-target="enseignants">Accéder à l'espace</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte Élèves -->
+            <div class="espace-card students-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-icon"><i class="fas fa-user-friends"></i></div>
+                        <h3>Espace Élèves</h3>
+                        <p>Apprendre en s'amusant</p>
+                        <div class="card-hover"><span>Cliquez pour explorer</span> <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="card-back">
+                        <h4>Ce que vous trouverez :</h4>
+                        <ul>
+                            <li><i class="fas fa-book"></i> Histoires illustrées</li>
+                            <li><i class="fas fa-gamepad"></i> Jeux éducatifs</li>
+                            <li><i class="fas fa-video"></i> Vidéos explicatives</li>
+                            <li><i class="fas fa-heart"></i> Développer l'empathie</li>
+                        </ul>
+                        <a href="espace-eleves.html" class="card-action" data-target="eleves">Accéder à l'espace</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Statistiques Animées -->
+    <section class="stats-section" id="stats">
+        <div class="section-header">
+            <h2 class="section-title">L'Épilepsie en Chiffres</h2>
+            <p class="section-subtitle">Des données qui parlent</p>
+            <div class="section-divider"></div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-globe-americas"></i></div>
+                <div class="stat-content">
+                    <h3 class="stat-number" data-count="50">50</h3>
+                    <span class="stat-suffix">millions</span>
+                    <p class="stat-label">de personnes touchées dans le monde</p>
+                </div>
+                <div class="stat-wave"></div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-child"></i></div>
+                <div class="stat-content">
+                    <h3 class="stat-number" data-count="1">1</h3>
+                    <span class="stat-suffix">enfant sur 200</span>
+                    <p class="stat-label">concerné en France</p>
+                </div>
+                <div class="stat-wave"></div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="stat-content">
+                    <h3 class="stat-number" data-count="80">85</h3>
+                    <span class="stat-suffix">%</span>
+                    <p class="stat-label">mènent une scolarité normale</p>
+                </div>
+                <div class="stat-wave"></div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-pills"></i></div>
+                <div class="stat-content">
+                    <h3 class="stat-number" data-count="70">70</h3>
+                    <span class="stat-suffix">%</span>
+                    <p class="stat-label">bien contrôlés par traitement</p>
+                </div>
+                <div class="stat-wave"></div>
+            </div>
+        </div>
+        <div class="stats-note">
+            <i class="fas fa-lightbulb"></i>
+            <p>Ces chiffres montrent qu'avec une bonne information et un accompagnement adapté, la majorité des enfants épileptiques peuvent pleinement s'épanouir à l'école.</p>
+        </div>
+    </section>
+
+    <!-- Section Message Inspirant -->
+    <section class="message-section" id="message">
+        <div class="message-container">
+            <div class="message-content">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <h2 class="message-title">
+                    <span class="message-highlight">Chaque enfant</span> a le droit d'apprendre, de participer et de s'épanouir
+                </h2>
+                <p class="message-text">
+                    Quelles que soient ses différences, chaque élève mérite une éducation de qualité dans un environnement bienveillant. L'épilepsie ne définit pas un enfant, c'est simplement une caractéristique parmi d'autres.
+                </p>
+                <div class="message-signature">
+                    <div class="signature-line"></div>
+                    <p>Notre engagement pour une école inclusive</p>
+                </div>
+            </div>
+            <div class="message-visual">
+                <div class="visual-elements">
+                    <div class="element" style="--delay: 0s">
+                        <i class="fas fa-book-open"></i> <span>Apprendre</span>
+                    </div>
+                    <div class="element" style="--delay: 0.2s">
+                        <i class="fas fa-users"></i> <span>Participer</span>
+                    </div>
+                    <div class="element" style="--delay: 0.4s">
+                        <i class="fas fa-smile"></i> <span>S'épanouir</span>
+                    </div>
+                    <div class="element" style="--delay: 0.6s">
+                        <i class="fas fa-heart"></i> <span>Inclure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>Prêt à découvrir notre guide complet ?</h2>
+                <p>Accédez à toutes nos ressources pédagogiques détaillées sur l'épilepsie en milieu scolaire</p>
+                <div class="cta-buttons">
+                    <a href="guide.html" class="cta-btn primary">
+                        <i class="fas fa-book-medical"></i> Accéder au guide complet
+                    </a>
+                    <a href="#contact" class="cta-btn secondary">
+                        <i class="fas fa-envelope"></i> Nous contacter
+                    </a>
+                </div>
+            </div>
+            <div class="cta-illustration">
+                <div class="illustration">
+                    <i class="fas fa-school"></i>
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring" style="--delay: 1s"></div>
+                    <div class="pulse-ring" style="--delay: 2s"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>Épilepsie<span class="logo-highlight">École</span></span>
+                </a>
+                <p class="footer-description">
+                    Une initiative pédagogique pour sensibiliser et accompagner la communauté éducative face à l'épilepsie.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Navigation</h4>
+                    <a href="#home">Accueil</a>
+                    <a href="#pourquoi">Notre mission</a>
+                    <a href="#espaces">Espaces</a>
+                    <a href="#stats">Chiffres clés</a>
+                    <a href="guide.html">Guide complet</a>
+                </div>
+                <div class="link-group">
+                    <h4>Ressources</h4>
+                    <a href="#">Parents</a>
+                    <a href="#">Enseignants</a>
+                    <a href="#">Élèves</a>
+                    <a href="#">Fiches pratiques</a>
+                    <a href="#">Vidéos éducatives</a>
+                </div>
+                <div class="link-group">
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>Projet de Fin d'Études – Réalisé par <strong>Essra Slimeni</strong> et <strong>Eya Saadi</strong> © 2026</p>
+                <div class="footer-extra">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Accessibilité</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="js/accueil.js"></script>
+</body>
+</html>

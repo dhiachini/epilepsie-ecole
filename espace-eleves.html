@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Élèves - L'Épilepsie Expliquée</title>
+    <link rel="stylesheet" href="css/espace-eleves.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🧠</span>
+                    <h1>Coin Élèves - Super Cerveaux</h1>
+                </div>
+                <p class="tagline">Découvre l'épilepsie avec Leo et ses amis ! Une aventure pour comprendre et aider.</p>
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <button class="nav-btn active" data-section="welcome">
+                        <i class="fas fa-home"></i> Accueil
+                    </button>
+                    <button class="nav-btn" data-section="story">
+                        <i class="fas fa-book"></i> L'Histoire de Leo
+                    </button>
+                    <button class="nav-btn" data-section="game">
+                        <i class="fas fa-gamepad"></i> Jeu du Cerveau
+                    </button>
+                    <button class="nav-btn" data-section="empathy">
+                        <i class="fas fa-heart"></i> Développer l'Empathie
+                    </button>
+                    <button class="nav-btn" data-section="video">
+                        <i class="fas fa-video"></i> Vidéo
+                    </button>
+                    <button class="nav-btn" data-section="quiz">
+                        <i class="fas fa-question-circle"></i> Quiz
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Section Accueil -->
+            <section id="welcome" class="content-section active">
+                <h2 class="section-title">Bienvenue au Coin Élèves !</h2>
+                
+                <div class="hero">
+                    <div class="hero-characters">
+                        <div class="character" id="leo">
+                            <div class="character-img">👦</div>
+                            <div class="character-name">Leo</div>
+                        </div>
+                        <div class="character" id="chloe">
+                            <div class="character-img">👧</div>
+                            <div class="character-name">Chloé</div>
+                        </div>
+                        <div class="character" id="tom">
+                            <div class="character-img">👦</div>
+                            <div class="character-name">Tom</div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="hero-title">🧠 L'Épilepsie, C'est Quoi ?</h2>
+                    <p class="hero-subtitle">
+                        Imagine que ton cerveau est comme une ville avec des lumières. Parfois, toutes les lumières s'allument en même temps ! C'est ce qu'on appelle une crise d'épilepsie.
+                    </p>
+                    
+                    <div class="did-you-know">
+                        <h3><i class="fas fa-lightbulb"></i> Le savais-tu ?</h3>
+                        <p>Beaucoup de personnes célèbres avaient ou ont de l'épilepsie : des écrivains, des musiciens, des sportifs !</p>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <button class="cta-btn story-btn">
+                            <i class="fas fa-book-open"></i> Découvrir l'histoire
+                        </button>
+                        <button class="cta-btn game-btn">
+                            <i class="fas fa-gamepad"></i> Jouer au jeu
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Histoire -->
+            <section id="story" class="content-section">
+                <h2 class="section-title">L'Histoire de Léo et ses Amis</h2>
+                
+                <div class="story-container">
+                    <div class="story-progress">
+                        <div class="progress-step active" data-chapter="1">Chapitre 1</div>
+                        <div class="progress-step" data-chapter="2">Chapitre 2</div>
+                        <div class="progress-step" data-chapter="3">Chapitre 3</div>
+                        <div class="progress-step" data-chapter="4">Chapitre 4</div>
+                    </div>
+                    
+                    <div class="story-content">
+                        <div class="story-chapter active" id="chapter-1">
+                            <div class="chapter-header">
+                                <h3>Chapitre 1 : Une Nouvelle Rencontre</h3>
+                                <div class="chapter-characters">
+                                    <span class="character-badge leo">Léo</span>
+                                    <span class="character-badge chloe">Chloé</span>
+                                </div>
+                            </div>
+                            <div class="chapter-body">
+                                <div class="story-illustration">
+                                    <div class="illustration-frame">
+                                        <div class="scene school-scene">
+                                            <div class="school">🏫</div>
+                                            <div class="character-avatar leo-avatar">👦</div>
+                                            <div class="character-avatar chloe-avatar">👧</div>
+                                            <div class="speech-bubble leo-speech">Bonjour, je m'appelle Léo !</div>
+                                            <div class="speech-bubble chloe-speech">Enchantée, moi c'est Chloé !</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="story-text">
+                                    <p>C'était un beau jour de septembre. Dans la cour de l'école, Léo rencontra Chloé pour la première fois. Ils partagèrent leurs goûts pour les dinosaures et le football.</p>
+                                    <p>Léo expliqua à Chloé qu'il avait de l'épilepsie. "C'est comme si mon cerveau faisait parfois une fête sans prévenir !" dit-il en souriant.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="story-chapter" id="chapter-2">
+                            <!-- Le contenu des autres chapitres sera généré par JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="story-navigation">
+                        <button class="story-nav-btn prev-btn">
+                            <i class="fas fa-arrow-left"></i> Précédent
+                        </button>
+                        <button class="story-nav-btn next-btn">
+                            Suivant <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Jeu -->
+            <section id="game" class="content-section">
+                <h2 class="section-title">Jeu : Le Cerveau Électrique</h2>
+                
+                <div class="game-container">
+                    <div class="game-instructions">
+                        <h3><i class="fas fa-info-circle"></i> Comment jouer ?</h3>
+                        <p>Aide Léo à garder son cerveau en équilibre ! Clique sur les boutons pour voir ce qui se passe.</p>
+                    </div>
+                    
+                    <div class="brain-game">
+                        <div class="brain-display" id="brain-display">
+                            <div class="brain-status">
+                                <h3>CERVEAU DE LÉO</h3>
+                                <p id="brain-status-text">État normal</p>
+                                <div class="brain-energy" id="brain-energy">
+                                    <div class="energy-bar"></div>
+                                    <span class="energy-value">50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="game-controls">
+                            <div class="control-group">
+                                <h4>Déclencheurs</h4>
+                                <button class="game-action-btn" data-action="stress">
+                                    <i class="fas fa-brain"></i> Stress
+                                </button>
+                                <button class="game-action-btn" data-action="fatigue">
+                                    <i class="fas fa-bed"></i> Fatigue
+                                </button>
+                                <button class="game-action-btn" data-action="lumiere">
+                                    <i class="fas fa-lightbulb"></i> Lumières clignotantes
+                                </button>
+                            </div>
+                            
+                            <div class="control-group">
+                                <h4>Solutions</h4>
+                                <button class="game-action-btn" data-action="calme">
+                                    <i class="fas fa-peace"></i> Respirer calmement
+                                </button>
+                                <button class="game-action-btn" data-action="medicament">
+                                    <i class="fas fa-capsules"></i> Prendre le médicament
+                                </button>
+                                <button class="game-action-btn" data-action="repos">
+                                    <i class="fas fa-couch"></i> Se reposer
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="game-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">⚡</div>
+                                <div class="stat-content">
+                                    <div class="stat-value" id="storm-count">0</div>
+                                    <div class="stat-label">Activités électriques</div>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">🛡️</div>
+                                <div class="stat-content">
+                                    <div class="stat-value" id="protection-score">100</div>
+                                    <div class="stat-label">Protection</div>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">❤️</div>
+                                <div class="stat-content">
+                                    <div class="stat-value" id="empathy-score">0</div>
+                                    <div class="stat-label">Points d'empathie</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Empathie -->
+            <section id="empathy" class="content-section">
+                <h2 class="section-title">Développer l'Empathie</h2>
+                
+                <div class="empathy-container">
+                    <div class="empathy-intro">
+                        <div class="empathy-icon">❤️</div>
+                        <h3>L'Empathie, c'est comprendre ce que ressent l'autre</h3>
+                        <p>Essaie ces exercices pour mieux comprendre ce que vit Léo et comment l'aider.</p>
+                    </div>
+                    
+                    <div class="empathy-exercises">
+                        <div class="exercise-card" data-exercise="1">
+                            <div class="exercise-header">
+                                <div class="exercise-number">1</div>
+                                <h4>Le Jeu des Émotions</h4>
+                            </div>
+                            <div class="exercise-content">
+                                <p>Comment te sentirais-tu si...</p>
+                                <div class="scenarios">
+                                    <div class="scenario" data-feeling="peur">
+                                        <p>Tu voyais ton ami faire une crise ?</p>
+                                        <div class="emotion-choices">
+                                            <button class="emotion-btn" data-emotion="peur">😨 Peur</button>
+                                            <button class="emotion-btn" data-emotion="calme">😌 Calme</button>
+                                            <button class="emotion-btn" data-emotion="confus">😕 Confus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="exercise-card" data-exercise="2">
+                            <div class="exercise-header">
+                                <div class="exercise-number">2</div>
+                                <h4>Que Faire ?</h4>
+                            </div>
+                            <div class="exercise-content">
+                                <p>Choisis la bonne réaction :</p>
+                                <div class="situation">
+                                    <p>Léo fait une crise en classe. Que fais-tu ?</p>
+                                    <div class="reaction-choices">
+                                        <button class="reaction-btn wrong">
+                                            <i class="fas fa-times"></i> Mettre un objet dans sa bouche
+                                        </button>
+                                        <button class="reaction-btn correct">
+                                            <i class="fas fa-check"></i> Protéger sa tête
+                                        </button>
+                                        <button class="reaction-btn wrong">
+                                            <i class="fas fa-times"></i> Le secouer pour le réveiller
+                                        </button>
+                                        <button class="reaction-btn correct">
+                                            <i class="fas fa-check"></i> Appeler le professeur
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="exercise-card" data-exercise="3">
+                            <div class="exercise-header">
+                                <div class="exercise-number">3</div>
+                                <h4>Paroles d'Amitié</h4>
+                            </div>
+                            <div class="exercise-content">
+                                <p>Compose un message pour Léo après une crise :</p>
+                                <div class="message-builder">
+                                    <div class="message-parts">
+                                        <button class="message-part" data-part="1">Salut Léo,</button>
+                                        <button class="message-part" data-part="2">comment vas-tu ?</button>
+                                        <button class="message-part" data-part="3">Tu nous as fait peur,</button>
+                                        <button class="message-part" data-part="4">mais on est là pour toi.</button>
+                                        <button class="message-part" data-part="5">Veux-tu jouer avec nous ?</button>
+                                    </div>
+                                    <div class="message-preview">
+                                        <p id="constructed-message">Écris ton message ici...</p>
+                                    </div>
+                                    <button class="send-message-btn">
+                                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="empathy-badge">
+                        <div class="badge-icon">🏆</div>
+                        <div class="badge-content">
+                            <h4>Ton niveau d'empathie</h4>
+                            <div class="badge-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="empathy-progress"></div>
+                                </div>
+                                <span class="badge-level" id="empathy-level">Débutant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Vidéo -->
+            <section id="video" class="content-section">
+                <h2 class="section-title">Vidéo Explicative</h2>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <div class="video-player">
+                            <div class="video-screen">
+                                <div class="video-overlay">
+                                    <i class="fas fa-play-circle"></i>
+                                    <p>Espace réservé pour votre vidéo</p>
+                                    <p class="video-instructions">Ajoutez votre vidéo explicative sur l'épilepsie ici</p>
+                                </div>
+                            </div>
+                            <div class="video-controls">
+                                <button class="video-control-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="video-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                </div>
+                                <button class="video-control-btn">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="video-info">
+                            <h3>Comment intégrer votre vidéo</h3>
+                            <ol class="integration-steps">
+                                <li>Placez votre fichier vidéo dans le dossier du projet</li>
+                                <li>Modifiez le fichier JavaScript pour pointer vers votre vidéo</li>
+                                <li>Ajoutez les contrôles vidéo personnalisés</li>
+                                <li>Testez la lecture sur différents appareils</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="video-activities">
+                        <h3>Activités autour de la vidéo</h3>
+                        <div class="activities-grid">
+                            <div class="activity-card">
+                                <div class="activity-icon">✏️</div>
+                                <h4>Avant de regarder</h4>
+                                <p>Note 3 choses que tu sais déjà sur l'épilepsie</p>
+                            </div>
+                            <div class="activity-card">
+                                <div class="activity-icon">❓</div>
+                                <h4>Pendant la vidéo</h4>
+                                <p>Note tes questions au fur et à mesure</p>
+                            </div>
+                            <div class="activity-card">
+                                <div class="activity-icon">📝</div>
+                                <h4>Après la vidéo</h4>
+                                <p>Résume ce que tu as appris en 3 points</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Quiz -->
+            <section id="quiz" class="content-section">
+                <h2 class="section-title">Quiz : Super Héros de l'Empathie</h2>
+                
+                <div class="quiz-container">
+                    <div class="quiz-header">
+                        <div class="quiz-progress">
+                            <div class="progress-step active">1</div>
+                            <div class="progress-step">2</div>
+                            <div class="progress-step">3</div>
+                            <div class="progress-step">4</div>
+                            <div class="progress-step">5</div>
+                        </div>
+                        <div class="quiz-score">
+                            Score : <span id="current-score">0</span> / 100
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-content">
+                        <div class="quiz-question-container">
+                            <h3 class="quiz-question" id="question-text">
+                                L'épilepsie est contagieuse.
+                            </h3>
+                            <div class="quiz-options" id="quiz-options">
+                                <!-- Options générées par JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-feedback" id="quiz-feedback">
+                            <!-- Feedback généré par JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-navigation">
+                        <button class="quiz-nav-btn" id="prev-question">
+                            <i class="fas fa-arrow-left"></i> Précédent
+                        </button>
+                        <button class="quiz-nav-btn" id="next-question">
+                            Suivant <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-characters">
+                    <div class="footer-character">
+                        <div class="character-avatar">👦</div>
+                        <p>"Merci de comprendre ma différence !"<br>- Léo</p>
+                    </div>
+                    <div class="footer-character">
+                        <div class="character-avatar">👧</div>
+                        <p>"Maintenant je sais comment aider !"<br>- Chloé</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Explore aussi :</h4>
+                    <div class="link-grid">
+                        <a href="#" class="footer-link" data-section="story">
+                            <i class="fas fa-book"></i> L'Histoire
+                        </a>
+                        <a href="#" class="footer-link" data-section="game">
+                            <i class="fas fa-gamepad"></i> Le Jeu
+                        </a>
+                        <a href="#" class="footer-link" data-section="empathy">
+                            <i class="fas fa-heart"></i> L'Empathie
+                        </a>
+                        <a href="#" class="footer-link" data-section="quiz">
+                            <i class="fas fa-trophy"></i> Le Quiz
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <p>Coin Élèves - Projet PFE sur l'Épilepsie</p>
+                    <p class="footer-note">Conçu avec ❤️ pour aider les enfants à comprendre et à développer leur empathie</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/espace-eleves.js"></script>
+</body>
+</html>
