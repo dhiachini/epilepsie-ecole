@@ -319,8 +319,16 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    transition: transform var(--transition-normal);
+    transition: transform 0.6s ease, opacity 0.6s ease;
     cursor: pointer;
+}
+
+/* Quand la vidéo joue : Leo et Chloé s'écartent à droite et disparaissent */
+body.video-playing-hero #leo,
+body.video-playing-hero #chloe {
+    transform: translateX(120vw);
+    opacity: 0;
+    pointer-events: none;
 }
 
 .character:hover {
@@ -1159,6 +1167,14 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.video-screen video,
+.eleves-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .video-overlay {

@@ -1122,64 +1122,68 @@ function showCharacterInfo(characterId) {
 }
 
 // ============================================
-// PLACEHOLDER VIDÉO
+// LECTEUR VIDÉO ESPACE ÉLÈVES
 // ============================================
 
 function initVideoPlaceholder() {
-    const videoControls = document.querySelectorAll('.video-control-btn');
-    const playBtn = document.querySelector('.video-control-btn .fa-play');
-    
-    if (playBtn) {
-        playBtn.closest('.video-control-btn').addEventListener('click', function() {
+    const video = document.getElementById('videoEleves');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const volumeBtn = document.getElementById('volumeBtn');
+    const progressFill = document.getElementById('videoProgressFill');
+    const progressBar = document.getElementById('videoProgressBar');
+
+    if (!video) return;
+
+    if (playPauseBtn) {
+        playPauseBtn.addEventListener('click', function() {
             const icon = this.querySelector('i');
-            if (icon.classList.contains('fa-play')) {
+            if (video.paused) {
+                video.play();
                 icon.classList.remove('fa-play');
                 icon.classList.add('fa-pause');
-                showVideoInstructions();
             } else {
+                video.pause();
                 icon.classList.remove('fa-pause');
                 icon.classList.add('fa-play');
             }
         });
     }
-}
 
-function showVideoInstructions() {
-    const videoScreen = document.querySelector('.video-screen');
-    if (!videoScreen) return;
-    
-    const instructions = document.createElement('div');
-    instructions.className = 'video-instructions-modal';
-    instructions.innerHTML = `
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(45, 48, 71, 0.95); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; z-index: 100; padding: 20px; text-align: center;">
-            <i class="fas fa-video" style="font-size: 4rem; margin-bottom: 20px; color: var(--secondary);"></i>
-            <h3 style="margin-bottom: 15px; color: var(--secondary);">Espace pour votre vidéo</h3>
-            <p style="margin-bottom: 20px; max-width: 600px;">
-                Pour ajouter votre vidéo explicative sur l'épilepsie :
-            </p>
-            <ol style="text-align: left; max-width: 500px; margin-bottom: 30px;">
-                <li style="margin-bottom: 10px;">Placez votre fichier vidéo dans le dossier du projet</li>
-                <li style="margin-bottom: 10px;">Remplacez la div .video-screen par une balise &lt;video&gt;</li>
-                <li style="margin-bottom: 10px;">Ajoutez les attributs controls, width="100%" et height="auto"</li>
-                <li>Testez la lecture sur différents navigateurs</li>
-            </ol>
-            <button id="close-instructions" style="padding: 12px 30px; background: var(--secondary); color: white; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 10px;">
-                <i class="fas fa-times"></i> Fermer
-            </button>
-        </div>
-    `;
-    
-    videoScreen.appendChild(instructions);
-    
-    document.getElementById('close-instructions').addEventListener('click', function() {
-        instructions.remove();
-        // Remettre le bouton play
-        const playBtn = document.querySelector('.video-control-btn .fa-pause');
-        if (playBtn) {
-            playBtn.classList.remove('fa-pause');
-            playBtn.classList.add('fa-play');
-        }
+    video.addEventListener('play', function() {
+        const icon = playPauseBtn && playPauseBtn.querySelector('i');
+        if (icon) { icon.classList.remove('fa-play'); icon.classList.add('fa-pause'); }
     });
+    video.addEventListener('pause', function() {
+        const icon = playPauseBtn && playPauseBtn.querySelector('i');
+        if (icon) { icon.classList.remove('fa-pause'); icon.classList.add('fa-play'); }
+    });
+
+    if (progressBar && progressFill) {
+        video.addEventListener('timeupdate', function() {
+            const pct = video.duration ? (video.currentTime / video.duration) * 100 : 0;
+            progressFill.style.width = pct + '%';
+        });
+        progressBar.addEventListener('click', function(e) {
+            const rect = this.getBoundingClientRect();
+            const pct = (e.clientX - rect.left) / rect.width;
+            video.currentTime = pct * video.duration;
+        });
+    }
+
+    if (volumeBtn) {
+        volumeBtn.addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            if (video.muted) {
+                video.muted = false;
+                icon.classList.remove('fa-volume-mute');
+                icon.classList.add('fa-volume-up');
+            } else {
+                video.muted = true;
+                icon.classList.remove('fa-volume-up');
+                icon.classList.add('fa-volume-mute');
+            }
+        });
+    }
 }
 
 // ============================================
