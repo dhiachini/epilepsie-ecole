@@ -1134,6 +1134,15 @@ function initVideoPlaceholder() {
 
     if (!video) return;
 
+    // Fallback si la vidéo ne charge pas (déploiement : chemin ou nom de fichier)
+    var videoTriedFallback = false;
+    video.addEventListener('error', function onVideoError() {
+        if (videoTriedFallback) return;
+        videoTriedFallback = true;
+        video.removeEventListener('error', onVideoError);
+        video.src = "assets/documents/eleves/vd%20de%20l%27espace%20%C3%A9l%C3%A8ve.mp4";
+    });
+
     if (playPauseBtn) {
         playPauseBtn.addEventListener('click', function() {
             const icon = this.querySelector('i');
