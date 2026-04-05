@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Ouvrir le PDF dans un nouvel onglet
             if (window.downloadPdf) {
-                window.downloadPdf('enseignants/Modèle PAI Tunisien.pdf');
+                window.downloadPdf('enseignants/PAI à génerer1.pdf');
             }
             
             // Animation de succès
