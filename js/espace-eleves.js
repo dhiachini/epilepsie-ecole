@@ -33,10 +33,10 @@ const storyChapters = [
         characters: ["leo", "chloe", "tom"],
         illustration: "classroom-scene",
         content: `
-            <p>Un jeudi après-midi, pendant un cours de dessin, Léo s'est mis à regarder dans le vide. Son crayon est tombé de sa main.</p>
-            <p>Chloé, assise à côté de lui, a remarqué qu'il ne répondait pas quand elle l'appelait. Elle a tout de suite prévenu la maîtresse.</p>
-            <p>Tom, un autre camarade, a aidé à éloigner les tables pour que Léo ne se blesse pas. La maîtresse a mis Léo en position latérale de sécurité.</p>
-            <p>Quelques minutes plus tard, Léo a recommencé à bouger. Il était fatigué et un peu confus, mais il allait bien.</p>
+            <p>Un jour , pendant la récréation, Léo s'est mis à trembler violemment. Son corps s'est raidi, ses bras ont commencé à secouer.</p>
+            <p>Chloé, à côté de lui, a remarqué qu'il ne répondait pas quand elle l'appelait. Elle a tout de suite prévenu la maîtresse.</p>
+            <p>Tom, un autre camarade, a aidé à écarter les autres enfants pour que Léo ne se blesse pas.</p>
+            <p>La maîtresse, vite, a glissé son blouson sous sa tête et a mis Léo en position latérale de sécurité.</p>
         `
     },
     {
@@ -57,7 +57,7 @@ const storyChapters = [
         characters: ["leo", "chloe", "tom"],
         illustration: "friendship-scene",
         content: `
-            <p>Depuis ce jour, Léo, Chloé et Tom sont devenus des amis inséparables. Ils ont créé un système pour aider Léo.</p>
+            <p>Un jour, pendant la récréation, Léo s'est mis à trembler violemment. Son corps s'est raidi, ses bras ont commencé à secouer.</p>
             <p>Chloé vérifie que Léo prend bien ses médicaments à la cantine. Tom s'assure qu'il n'y a pas de lumières clignotantes quand ils jouent aux jeux vidéo.</p>
             <p>Léo leur a appris les signes qui montrent qu'une crise pourrait arriver : "Quand je suis très fatigué ou stressé, c'est plus probable."</p>
             <p>Avec ses amis à ses côtés, Léo se sent en sécurité et compris. Il sait qu'il peut compter sur eux !</p>
