@@ -33,7 +33,7 @@ const storyChapters = [
         characters: ["leo", "chloe", "tom"],
         illustration: "classroom-scene",
         content: `
-            <p>Un jour , pendant la récréation, Léo s'est mis à trembler violemment. Son corps s'est raidi, ses bras ont commencé à secouer.</p>
+            <p>Un jour, pendant la récréation, Léo s'est mis à trembler violemment. Son corps s'est raidi, ses bras ont commencé à secouer.</p>
             <p>Chloé, à côté de lui, a remarqué qu'il ne répondait pas quand elle l'appelait. Elle a tout de suite prévenu la maîtresse.</p>
             <p>Tom, un autre camarade, a aidé à écarter les autres enfants pour que Léo ne se blesse pas.</p>
             <p>La maîtresse, vite, a glissé son blouson sous sa tête et a mis Léo en position latérale de sécurité.</p>
